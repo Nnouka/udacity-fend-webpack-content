@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
     "build": "webpack",
-    "build:dev": "webpack --config webpack.dev.config.js"
+    "build:dev": "webpack --config webpack.dev.config.js",
+    "watch": "webpack --config webpack.config.dev.js --watch",
+    "dev": "webpack-dev-server  --config webpack.config.dev.js --open"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +18,9 @@
     "@babel/core": "^7.22.1",
     "@babel/preset-env": "^7.22.4",
     "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.1",
+    "webpack-bundle-analyzer": "^4.9.0",
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
